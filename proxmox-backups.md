@@ -24,6 +24,8 @@ I attached an SMB network share from my ZimaOS (Prod) machine to Proxmox as a st
 - **ZimaOS is already my production storage.** It has RAID 1, so the backups sit on storage that is already built to survive a single drive failure.
 - **SMB is simple and well supported.** Proxmox supports SMB/CIFS shares natively, so there is no extra software to install or maintain.
 
+![image alt](https://github.com/ejneedham00/HomeLab-Handbook/blob/49d67cd110d840dbbea0316902040888b670a7da/Screenshot%202026-11-02%20171811.png)
+
 ---
 
 ## Step 2: Creating the Backup Job
@@ -37,6 +39,8 @@ I created a scheduled backup job that backs up all Proxmox files to the ZimaOS (
 - **Backing up everything.** Covering all Proxmox files means I can rebuild the lab from one place instead of piecing it together.
 - **RAID 1 on the target.** The backups are mirrored across two drives, so a single disk failure on the ZimaOS side does not lose them.
 
+![image alt](https://github.com/ejneedham00/HomeLab-Handbook/blob/30773de1fc50dc6ad7cd2844585b7a211039d0ff/Screenshot%202026-11-02%20170600.png)
+
 ---
 
 ## Step 3: Retention (Keep the Last 3 Backups)
@@ -49,6 +53,8 @@ The job is set to keep only the 3 most recent backups and automatically purge an
 - **Old backups rarely matter.** If something breaks, I almost always want a recent known-good state, not one from weeks ago.
 - **Less to manage.** Pruning happens automatically, so there is no manual cleanup.
 - **Still some history.** Three copies gives me a small safety margin if the most recent backup turns out to include a problem I did not notice straight away.
+
+![image alt](https://github.com/ejneedham00/HomeLab-Handbook/blob/59dc49d93c1f1137153be7b0ccbb89fd3e46d96a/Screenshot%202026-11-02%20171625.png)
 
 ---
 
