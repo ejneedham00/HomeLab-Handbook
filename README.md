@@ -43,7 +43,7 @@ A single PC running [ZimaOS](https://www.zimaspace.com/zimaos), serving the peop
  
 ### Test: Proxmox VE cluster
  
-Three identical mini PCs running [Proxmox VE](https://www.proxmox.com/en/proxmox-virtual-environment/overview) as a three-node cluster with quorum. This is where I try new services, practise real-world infrastructure skills, and test changes before they go anywhere near production. **This is the part of the lab this handbook documents.**
+Three identical HP Elitedesk 800 G2 mini PCs running [Proxmox VE](https://www.proxmox.com/en/proxmox-virtual-environment/overview) as a three-node cluster with quorum. This is where I try new services, practise real-world infrastructure skills, and test changes before they go anywhere near production. **This is the part of the lab this handbook documents.**
 
 | | |
 |---|---|
@@ -72,7 +72,7 @@ A step-by-step guide for a one-click install would be boring. The interesting, d
 | Device | Qty | Role |
 |---|---|---|
 | PC (i5-10500, 16 GB RAM, 256 GB SSD + 2 x 4 TB HDD RAID 1) | 1 | Production (ZimaOS) |
-| Mini PC (I5-6500T, 16GB RAM, 256 GB SSD) | 3 | Test (Proxmox VE cluster) |
+| HP Mini PC (I5-6500T, 16GB RAM, 256 GB SSD) | 3 | Test (Proxmox VE cluster) |
 | ISP router | 1 | Internet gateway |
 | TP-Link TL-SG108E | 1 | 8-port managed switch |
 | Ubiquiti UniFi AP AC Lite | 3 | Wi-Fi, one SSID per VLAN |
@@ -110,7 +110,7 @@ Each zone exists to contain a different kind of risk.
  
 ## How traffic flows
  
-
+![image alt](https://github.com/ejneedham00/HomeLab-Handbook/blob/983bab3097a10de2a6eb2b4bacf475ac569e3241/Home%20Network%20Diagram.png)
  
 ### Normal day-to-day flow
  
