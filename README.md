@@ -12,7 +12,7 @@ My homelab is split into three zones: a **production** environment that the hous
 - Why production isn't documented here
 - Hardware overview
 - Network design
-- Why VLANs?](#why-vlans
+- Why VLANs?
 - How traffic flows
 - What's in this repo
 ---
