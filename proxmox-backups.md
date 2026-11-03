@@ -9,7 +9,7 @@ A short write-up of how I back up my Proxmox home lab to my ZimaOS production ma
 | Source | Proxmox VE host |
 | Destination | ZimaOS (Prod environment), RAID 1 storage |
 | Transport | SMB network share |
-| Schedule | Monday to Friday at 12pm |
+| Schedule | Monday to Friday at 12am |
 | Retention | Last 3 backups |
 
 ---
@@ -28,7 +28,7 @@ I attached an SMB network share from my ZimaOS (Prod) machine to Proxmox as a st
 
 ## Step 2: Creating the Backup Job
 
-I created a scheduled backup job that backs up all Proxmox files to the ZimaOS (Prod) RAID 1 storage. It runs Monday to Friday at 12pm.
+I created a scheduled backup job that backs up all Proxmox files to the ZimaOS (Prod) RAID 1 storage. It runs Monday to Friday at 12am.
 
 ### Why I did this
 
